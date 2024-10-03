@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+}
+
+.up{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    background-color: #cfcdcd;
+    font: 12px arial;
+    color: #878787;
+    padding: 0px 37.1428px;
+    overflow: hidden;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 10;
+    
+}
+.up p{
+    margin: 0;
+    
+    display: inline-block;
+    white-space: nowrap;
+    animation: slideText 35s ease-in-out 0s infinite alternate;
+
+}
+@keyframes slideText {
+    50% {
+        transform: translateX(100%); 
+        
+    }
+    
+     100% {
+        transform: translateX(-100%); 
+        
+    }
+}
+
+
+
+.navbar{
+   
+    height: 70px;
+    background-color: #FFFFFFCC;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    position: fixed; 
+    top: 30px; 
+    width: 100%; 
+    z-index: 999;
+    box-sizing: border-box; 
+   
+}
+body{
+    margin: 0;
+    height: 100vh; 
+    overflow-x: hidden;
+}
+.menu{
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.logo1{
+    height: 70px;
+   display: flex;
+   align-items: center;
+   margin-left: 200px;
+    
+}
+.logo1 img{
+    height: 50px;
+    width: auto;
+    max-height: 100%;
+
+}
+.other{
+    font-size: 24px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: space-around;/*--*/
+}
+
+.dropdown {
+    position: relative;
+    cursor: pointer; 
+}
+
+.dropdown-icon {
+    height: 20px; 
+    width:30px;
+}
+
+
+.dropdown-content {
+    height: 10px;
+    width: 4px;
+    display: none; 
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    right: 0; 
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; 
+}
+
+.dropdown-content a {
+    display: block; 
+}
+
+.dropdown-image {
+    width: 10px; 
+    height:30px; 
+    padding: 10px; 
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1; 
+}
+
+.icon-with-text {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    font-size: 14px;       
+    gap: 5px; 
+    flex-shrink: 1;              
+}
+
+.icon-with-text i {
+    font-size: 20px;
+
+   
+}
+
+
+.icon-with-text span {
+    font-size: 12px; 
+}
+
+
+.whatsapp-icon i {
+    color: #25D366 !important;  
+}
+
+.main-container {
+    
+    display: flex; 
+    flex-direction: column;
+    margin-top: 100px; 
+}
+
+.gallery-image {
+    width: 100%; 
+    height: auto;
+    margin: 0; 
+}
+.footer{
+    background-color: rgb(120, 112, 112);
+    height: 100%;
+    width: 100%;
+}
+
+/*footer section*/
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .footer-subscribe {
+    flex: 2;  /* Larger width for the first div */
+    display: flex;
+    justify-content: center;
+    align-items: stretch;  /* Stretch to make button equal height */
+  }
+  
+  .footer-subscribe input {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    width: 70%;
+  }
+  
+  .footer-subscribe button {
+    padding: 0 20px;  /* Remove vertical padding */
+    font-size: 16px;
+    background-color: #ff6600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    height: 100%;  /* Make button height equal to input */
+  }
+  
+  .footer-section {
+    flex: 1;  /* Smaller width for the remaining divs */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .footer-section i {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section p {
+    font-size: 14px;
+  }
+  
+  /* Additional Information Styling */
+  .additional-info {
+    margin-top: 20px;  /* Space under the footer sections */
+    font-size: 12px;
+  }
+  
