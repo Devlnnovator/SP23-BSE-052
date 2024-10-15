@@ -60,14 +60,55 @@
 
             
             <div class="icon-with-text">
-                <i class="fa-solid fa-cart-shopping"></i>
+              <i class="fa-solid fa-cart-shopping" id="cartButton"></i>
                 <span>MyCart</span>
             </div>
         </div>
 
     </div>
-    
-   </header>
+</header>
+
+<div id="checkoutModal" class="modal"> <!-- Label: Modal container -->
+  <div class="modal-content"> <!-- Label: Modal content -->
+      <span class="close-btn" id="closeModal">&times;</span> <!-- Label: Close button -->
+      <h2>Checkout Form</h2>
+      <form id="checkoutForm">
+          <!-- Checkout form fields -->
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" required>
+
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="phone">Phone:</label>
+          <input type="text" id="phone" name="phone" required>
+
+          <label for="address">Address:</label>
+          <input type="text" id="address" name="address" required>
+
+          <label for="city">City:</label>
+          <input type="text" id="city" name="city" required>
+
+          <label for="payment">Payment Method:</label>
+          <select id="payment" name="payment" required>
+              <option value="credit">Credit Card</option>
+              <option value="paypal">PayPal</option>
+              <option value="cod">Cash on Delivery</option>
+          </select>
+
+          <button type="submit">Submit</button>
+      </form>
+  </div>
+</div>
+
+<!-- Include External JavaScript -->
+<script src="checkout.js"></script> <!-- Label: External JavaScript file -->
+
+
+
    <div class="main-container">
        <img src="image1.webp" alt="Image 1" class="gallery-image">
        <img src="/image2.webp" alt="Image 2" class="gallery-image">
@@ -79,9 +120,9 @@
        <img src="/image8.webp" alt="Image 8" class="gallery-image">
   </div>
   
-
-
-  <footer>
+       
+  
+<footer>
     <div class="footer-container">
       <!-- First div: Input box with a button -->
       <div class="footer-subscribe">
