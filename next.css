@@ -167,79 +167,187 @@ body{
     height: auto;
     margin: 0; 
 }
-.footer{
-    background-color: rgb(120, 112, 112);
-    height: 100%;
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh; 
+    overflow-x: hidden;
+}
+/* footer section*/
+
+.footer-container {
+    width: 100%;
+    height: auto; /* Changed to auto for flexibility */
+}
+
+.top-footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin-top: 2%;
+}
+
+.store-location, .order-tracking, .contact-info {
+    display: flex; /* Aligns image and text */
+    align-items: center; /* Center-aligns the image and text */
+    margin: 0 20px; /* Space between sections */
+}
+
+.location-icon, .tracking-icon, .message-icon, .phone-icon {
+    width: 60px; /* Decreased size */
+    height: 60px; /* Decreased size */
+    border-radius: 50%;
+    border: 2px black solid;
+    display: flex; /* Centers image inside */
+    justify-content: center; /* Centers image inside */
+    align-items: center; /* Centers image inside */
+    margin: 0 10px; /* Space around the circle */
+}
+
+.location-icon img, .tracking-icon img, .message-icon img, .phone-icon img {
+    width: 80%; /* Adjusted size */
+    height: 80%; /* Adjusted size */
+    object-fit: cover;
+    padding: 10%; /* Space between image and border */
+}
+
+.contact-info {
+    display: flex;
+}
+
+.contact-info p {
+    margin-top: 0; /* Adjusted for better alignment */
+    margin-left: 10px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+}
+
+.store-location p, .order-tracking p {
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.bottom-footer {
+    padding: 30px 20px;
+    color: black;
+}
+
+.footer-details {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+    gap: 20px;
+}
+
+.footer-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-details li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer-details li a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer-details li a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+.footer-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.contact-text {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 10px 10px 10px 0px;
+}
+
+.newsletter-section form {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+    height: 50px;
+    line-height: 22px;
+}
+
+.newsletter-section input {
+    padding: 10px;
+    font-size: 14px;
+    border: 2px black solid;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 200px;
+    background-color: black;
+    color: white;
+}
+
+.newsletter-section input::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+.newsletter-section button {
+    padding: 10px;
+    font-size: 14px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 80px;
+    background-color: #d5d5d5;
+    color: #000;
+    border: 2px #d5d5d5 solid;
+    font-weight: 600;
+}
+
+.subscribe-button:hover {
+    background-color: #878787;
+}
+
+.social-media-footer {
+    display: flex;
+    justify-content: center;
     width: 100%;
 }
 
-/*footer section*/
-footer {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-  }
-  
-  .footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    margin: 0 auto;
-  }
-  
-  .footer-subscribe {
-    flex: 2;  /* Larger width for the first div */
+.instagram, .facebook, .linkedin, .youtube, .twitter {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 2px #d5d5d5 solid;
+    margin: 10px;
     display: flex;
     justify-content: center;
-    align-items: stretch;  /* Stretch to make button equal height */
-  }
-  
-  .footer-subscribe input {
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    border-radius: 4px;
-    margin-right: 10px;
-    width: 70%;
-  }
-  
-  .footer-subscribe button {
-    padding: 0 20px;  /* Remove vertical padding */
-    font-size: 16px;
-    background-color: #ff6600;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    color: white;
-    height: 100%;  /* Make button height equal to input */
-  }
-  
-  .footer-section {
-    flex: 1;  /* Smaller width for the remaining divs */
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
-  }
-  
-  .footer-section i {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .footer-section p {
-    font-size: 14px;
-  }
-  
-  /* Additional Information Styling */
-  .additional-info {
-    margin-top: 20px;  /* Space under the footer sections */
-    font-size: 12px;
-  }
+    background-color: #d5d5d5;
+}
 
-  /* Modal container */
+.instagram i, .facebook i, .linkedin i, .youtube i, .twitter i {
+    font-size: 40px;
+    color: black;
+}
+
+
+  /* Modal ( form in the navbar ) container */
 .modal {
     display: none; /* Hidden by default */
     position: fixed;
