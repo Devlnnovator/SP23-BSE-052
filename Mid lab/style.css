@@ -1,0 +1,150 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.container {
+    width: 800px;
+    margin: 20px auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    background-color: #1a237e;
+    color: white;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    text-align: center;
+    line-height: 1.6;
+}
+
+.profile-section {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative; 
+}
+
+
+.profile-section::after {
+    content: '';
+    position: absolute;
+    bottom: -10px; 
+    left: 0; 
+    right: 0; 
+    height: 2px;
+    background-color: #1a237e;
+}
+
+.profile-text {
+    flex: 2;
+    padding-right: 20px;
+}
+
+.profile-image {
+    flex: 1;
+    text-align: center;
+}
+
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.main-content {
+    display: flex;
+    padding: 0 20px 20px;
+    position: relative;
+}
+
+.main-content::before {
+    content: '';
+    position: absolute;
+    right: 35%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #1a237e;
+}
+
+.left-section {
+    flex: 2;
+    padding-right: 40px;
+}
+
+.right-section {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.section-heading {
+    color:rgb(235, 118, 75);
+    margin: 20px 0 10px;
+    font-size: 1.5em;
+}
+
+.experience-item,
+.highlight-item,
+.education-item,
+.hobby-item {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+    list-style-type: disc;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+
+/* Personal info display (initially hidden) */
+#personal-info-container {
+    position: absolute;
+    top: 20%;  /* Adjust position based on your layout */
+    right: 5%; /* Adjust position to your preference */
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #1a237e;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none; /* Hidden by default */
+    font-size: 0.9em;
+}
+
+#personal-info-container p {
+    color: #333;
+}
+
+
+
+
+
+

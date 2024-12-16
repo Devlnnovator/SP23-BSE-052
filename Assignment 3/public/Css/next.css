@@ -1,0 +1,165 @@
+/* Custom styles to complement Bootstrap */
+
+/* General styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Scrolling text at the top */
+.up {
+    height: 30px;
+    background-color: #4f4d4d;
+    font-size: 12px;
+    color: #878787;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030;
+}
+
+.up p {
+    margin: 0;
+    white-space: nowrap;
+    animation: slideText 35s ease-in-out 0s infinite alternate;
+}
+
+@keyframes slideText {
+    50% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.8);
+    top: 30px;
+}
+
+.navbar-brand img {
+    height: 50px;
+    width: auto;
+}
+
+/* Icon with text styles */
+.icon-with-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    gap: 5px;
+}
+
+.icon-with-text i {
+    font-size: 20px;
+}
+
+.icon-with-text span {
+    font-size: 12px;
+}
+
+.whatsapp-icon i {
+    color: #25D366 !important;
+}
+
+/* Main content */
+.main-container {
+    margin-top: 100px;
+}
+
+.gallery-image {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+/* Footer styles */
+.footer-container {
+    width: 100%;
+    height: auto;
+}
+
+.footer-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.footer-icon img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    padding: 10%;
+}
+
+.footer-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.footer-details li a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+/* Newsletter form */
+.newsletter-section form {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    line-height: 22px;
+}
+
+.newsletter-section input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.newsletter-section button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+/* Social media icons */
+.social-media-footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.social-media-icon {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 2px solid #d5d5d5;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d5d5d5;
+}
+
+.social-media-icon i {
+    font-size: 40px;
+    color: black;
+}
+
+/* Modal styles */
+.modal-content {
+    border-radius: 8px;
+}
+
+#checkoutForm label {
+    font-weight: bold;
+}
+
+#checkoutForm input,
+#checkoutForm select,
+#checkoutForm button {
+    margin-bottom: 15px;
+}
