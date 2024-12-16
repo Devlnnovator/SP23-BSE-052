@@ -1,0 +1,428 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+}
+
+.up{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    background-color: #cfcdcd;
+    font: 12px arial;
+    color: #878787;
+    padding: 0px 37.1428px;
+    overflow: hidden;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 10;
+    
+}
+.up p{
+    margin: 0;
+    
+    display: inline-block;
+    white-space: nowrap;
+    animation: slideText 35s ease-in-out 0s infinite alternate;
+
+}
+@keyframes slideText {
+    50% {
+        transform: translateX(100%); 
+        
+    }
+    
+     100% {
+        transform: translateX(-100%); 
+        
+    }
+}
+
+
+
+.navbar{
+   
+    height: 70px;
+    background-color: #FFFFFFCC;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    position: fixed; 
+    top: 30px; 
+    width: 100%; 
+    z-index: 999;
+    box-sizing: border-box; 
+   
+}
+body{
+    margin: 0;
+    height: 100vh; 
+    overflow-x: hidden;
+}
+.menu{
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.logo1{
+    height: 70px;
+   display: flex;
+   align-items: center;
+   margin-left: 200px;
+    
+}
+.logo1 img{
+    height: 50px;
+    width: auto;
+    max-height: 100%;
+
+}
+.other{
+    font-size: 24px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: space-around;/*--*/
+}
+
+.dropdown {
+    position: relative;
+    cursor: pointer; 
+}
+
+.dropdown-icon {
+    height: 20px; 
+    width:30px;
+}
+
+
+.dropdown-content {
+    height: 10px;
+    width: 4px;
+    display: none; 
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    right: 0; 
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; 
+}
+
+.dropdown-content a {
+    display: block; 
+}
+
+.dropdown-image {
+    width: 10px; 
+    height:30px; 
+    padding: 10px; 
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1; 
+}
+
+.icon-with-text {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    font-size: 14px;       
+    gap: 5px; 
+    flex-shrink: 1;              
+}
+
+.icon-with-text i {
+    font-size: 20px;
+
+   
+}
+
+
+.icon-with-text span {
+    font-size: 12px; 
+}
+
+
+.whatsapp-icon i {
+    color: #25D366 !important;  
+}
+
+.main-container {
+    
+    display: flex; 
+    flex-direction: column;
+    margin-top: 100px; 
+}
+
+.gallery-image {
+    width: 100%; 
+    height: auto;
+    margin: 0; 
+}
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh; 
+    overflow-x: hidden;
+}
+/* footer section*/
+
+.footer-container {
+    width: 100%;
+    height: auto; /* Changed to auto for flexibility */
+}
+
+.top-footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin-top: 2%;
+}
+
+.store-location, .order-tracking, .contact-info {
+    display: flex; /* Aligns image and text */
+    align-items: center; /* Center-aligns the image and text */
+    margin: 0 20px; /* Space between sections */
+}
+
+.location-icon, .tracking-icon, .message-icon, .phone-icon {
+    width: 60px; /* Decreased size */
+    height: 60px; /* Decreased size */
+    border-radius: 50%;
+    border: 2px black solid;
+    display: flex; /* Centers image inside */
+    justify-content: center; /* Centers image inside */
+    align-items: center; /* Centers image inside */
+    margin: 0 10px; /* Space around the circle */
+}
+
+.location-icon img, .tracking-icon img, .message-icon img, .phone-icon img {
+    width: 80%; /* Adjusted size */
+    height: 80%; /* Adjusted size */
+    object-fit: cover;
+    padding: 10%; /* Space between image and border */
+}
+
+.contact-info {
+    display: flex;
+}
+
+.contact-info p {
+    margin-top: 0; /* Adjusted for better alignment */
+    margin-left: 10px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+}
+
+.store-location p, .order-tracking p {
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.bottom-footer {
+    padding: 30px 20px;
+    color: black;
+}
+
+.footer-details {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+    gap: 20px;
+}
+
+.footer-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-details li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer-details li a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer-details li a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+.footer-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.contact-text {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 10px 10px 10px 0px;
+}
+
+.newsletter-section form {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+    height: 50px;
+    line-height: 22px;
+}
+
+.newsletter-section input {
+    padding: 10px;
+    font-size: 14px;
+    border: 2px black solid;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 200px;
+    background-color: black;
+    color: white;
+}
+
+.newsletter-section input::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+.newsletter-section button {
+    padding: 10px;
+    font-size: 14px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 80px;
+    background-color: #d5d5d5;
+    color: #000;
+    border: 2px #d5d5d5 solid;
+    font-weight: 600;
+
+}
+
+.subscribe-button:hover {
+    background-color: #878787;
+}
+
+.social-media-footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.instagram, .facebook, .linkedin, .youtube, .twitter {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 2px #d5d5d5 solid;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d5d5d5;
+}
+
+.instagram i, .facebook i, .linkedin i, .youtube i, .twitter i {
+    font-size: 40px;
+    color: black;
+}
+
+
+  /* Modal ( form in the navbar ) container */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 9999; /* Ensure it's on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /*pointer-events: none; *//* Disable interaction with the background */
+}
+
+/* Modal content box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    max-height: 70vh; /* Limit height, so scrolling works */
+    overflow-y: auto;
+    border-radius: 8px;
+    position: relative;
+    left: 20%; /* Move it slightly to the right */
+    pointer-events: auto; /* Enable interaction within the modal */
+}
+
+/* Close button styling */
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Close button hover effect */
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Checkout form styling */
+#checkoutForm {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+}
+
+#checkoutForm label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#checkoutForm input,
+#checkoutForm select,
+#checkoutForm button {
+    margin-bottom: 15px; /* Add space between inputs */
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Submit button styling */
+#checkoutForm button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#checkoutForm button:hover {
+    background-color: #218838;
+}
+  

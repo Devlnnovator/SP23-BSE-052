@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sana_safinaz</title>
+    <link rel="stylesheet" href="next.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+
+</head>
+<body>
+   <header>
+    <div class="up">
+        <p>
+        In Pakistan, a flat fee of PKR 190 will be charged on all orders | Free International Shipping Above USD 300 (T$C Apply)-UAN/WhatsApp:021-111-003-005
+        </p>
+        </div>
+    <div class="navbar">
+        <div class="menu">
+        <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="logo1">
+            <img src="/sana_fb.webp" alt="pic">
+
+        </div>
+        <div class="other">
+            <div class="icon-with-text">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <span>Search</span>
+            </div>
+
+            <div class="dropdown">
+                <img src="/flag_us.webp" alt="Dropdown Icon" class="dropdown-icon">
+                <div class="dropdown-content">
+                    <a href="#"><img src="/flag_us.webp" alt="Image 1" class="dropdown-image"></a>
+                    <a href="#"><img src="/flag2.webp" alt="Image 2" class="dropdown-image"></a>
+                    <a href="#"><img src="/flag5.webp" alt="Image 3" class="dropdown-image"></a>
+                    <a href="#"><img src="/flag6.webp" alt="Image 4" class="dropdown-image"></a>
+                    <a href="#"><img src="/flg4.webp" alt="Image 5" class="dropdown-image"></a>
+                </div>
+            </div>
+
+            <div class="icon-with-text whatsapp-icon">
+               
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>WhatsApp</span>
+                
+            </div>
+
+            <div class="icon-with-text">
+                <i class="fa-solid fa-truck-fast"></i>
+                <span>Track</span>
+            </div>
+
+            <div class="icon-with-text">
+                <i class="fa-regular fa-user"></i>
+                <span>Account</span>
+            </div>
+
+            
+            <div class="icon-with-text">
+              <i class="fa-solid fa-cart-shopping" id="cartButton"></i>
+                <span>MyCart</span>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<div id="checkoutModal" class="modal"> <!-- Label: Modal container -->
+  <div class="modal-content"> <!-- Label: Modal content -->
+      <span class="close-btn" id="closeModal">&times;</span> <!-- Label: Close button -->
+      <h2>Checkout Form</h2>
+      <form id="checkoutForm">
+          <!-- Checkout form fields -->
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" required>
+
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="phone">Phone:</label>
+          <input type="text" id="phone" name="phone" required>
+
+          <label for="address">Address:</label>
+          <input type="text" id="address" name="address" required>
+
+          <label for="city">City:</label>
+          <input type="text" id="city" name="city" required>
+
+          <label for="payment">Payment Method:</label>
+          <select id="payment" name="payment" required>
+              <option value="credit">Credit Card</option>
+              <option value="paypal">PayPal</option>
+              <option value="cod">Cash on Delivery</option>
+          </select>
+
+          <button type="submit">Submit</button>
+      </form>
+  </div>
+</div>
+
+<!-- Include External JavaScript -->
+<script src="checkout.js"></script> <!-- Label: External JavaScript file -->
+
+
+
+   <div class="main-container">
+       <img src="image1.webp" alt="Image 1" class="gallery-image">
+       <img src="/image2.webp" alt="Image 2" class="gallery-image">
+       <img src="/image3.webp" alt="Image 3" class="gallery-image">
+       <img src="/image4.webp" alt="Image 4" class="gallery-image">
+       <img src="/image5.webp" alt="Image 5" class="gallery-image">
+       <img src="/image6.webp" alt="Image 6" class="gallery-image">
+       <img src="/image7.webp" alt="Image 7" class="gallery-image">
+       <img src="/image8.webp" alt="Image 8" class="gallery-image">
+  </div>
+   <!-- footer section-->
+
+   <footer>
+    <div class="footer-container">
+        <div class="top-footer">
+            <div class="store-location">
+                <div class="location-icon">
+                    <img src="/location.svg" alt="">
+                 </div>
+                 <p>
+                    FIND A STORE
+                 </p>
+            </div>
+            <div class="order-tracking">
+                <div class="tracking-icon">
+                    <img src="/truck.svg" alt="">
+                </div>
+                <p>
+                    TRACK ORDER
+                </p>
+            </div>
+            <div class="contact-info">
+                <div class="message-icon">
+                    <img src="/envelope.svg" alt="">
+                </div>
+                <div class="phone-icon">
+                    <img src="/phone.svg" alt="">
+                </div>
+                <p>
+                    GET IN TOUCH
+                </p>
+            </div>
+        </div>
+
+        <div class="bottom-footer">
+            <div class="footer-details">
+                <ul>
+                    <h6 class="footer-title">Company</h6>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Shipping Information</a></li>
+                    <li><a href="#">Return & Exchange</a></li>
+                    <li><a href="#">Payment & Security</a></li>
+                    <li><a href="#">Loyalty Programme</a></li>
+                </ul>
+
+                <ul>
+                    <h6 class="footer-title">Help</h6>
+                    <li><a href="#">Store Locator</a></li>
+                    <li><a href="#">Track your Order</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">FAQ's</a></li>
+                </ul>
+
+                <ul>
+                    <h6 class="footer-title">Contact Info</h6>
+                    <li>Sanasafinaz UAN PAKISTAN:</li>
+                    <li><a href="#">021-111-003-005</a></li>
+                    <li><a href="#">021-36105426</a></li>
+                    <li>UAN INTERNATIONAL:</li>
+                    <li><a href="#">+9221-111-003-005</a></li>
+                    <li><a href="#">+9221-36105426</a></li>
+                    <li>Email: <a href="mailto:sales@sanasafinaz.com">sales@sanasafinaz.com</a></li>
+                    <li><a href="mailto:bridals@sanasafinaz.com">bridals@sanasafinaz.com</a></li>
+                </ul>
+
+                <ul>
+                    <h6 class="footer-title">Information</h6>
+                    <li><a href="#">Privacy and Cookie Policy</a></li>
+                    <li><a href="#">Order and Returns</a></li>
+                    <li><a href="#">Search Terms</a></li>
+                    <li><a href="#">Size Guide</a></li>
+                    <li><a href="#">Size Chart</a></li>
+                </ul>
+
+                <div class="newsletter-section">
+                    <h6 class="footer-title">Sign Up For Our Newsletter</h6>
+                    <form action="#" method="POST">
+                        <input type="email" name="email" placeholder="Enter your email" required>
+                        <button type="submit" title="Subscribe" class="subscribe-button">Sign up</button>
+                    </form>
+                    <h6 class="contact-text">Talk To Us!</h6>
+                    <p>Text Us @ 9095 (For Residents Of Pakistan Only)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-media-footer">
+            <div class="instagram">
+                <a href="https://www.instagram.com/sanasafinazofficial/">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            <div class="facebook">
+                <a href="https://www.facebook.com/sanasafinazpage/">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+            <div class="twitter">
+                <a href="https://x.com/sanasafinaz?mx=2">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </div>
+            <div class="linkedin">
+                <a href="https://pk.linkedin.com/company/sanasafinaz">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+            <div class="youtube">
+                <a href="https://www.youtube.com/c/Sanasafinazofficial">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+  
+       
+  
+
+  
+</body>
+</html>
